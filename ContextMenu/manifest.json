@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "My Context",
+  "version": "1.0",
+  "description": "右クリックで選択した要素を削除する。",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  }/*,
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["contents.js"]
+  }]
+  */
+}
